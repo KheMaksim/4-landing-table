@@ -1,0 +1,33 @@
+.adaptive
+	&__table
+		display: none
+		width: 100%
+		+mobile-landscape
+			display: table
+
+.main
+	&__card
+		width: 100%
+		+border(2px,$bordcol)
+		border-radius: 8px
+		margin-bottom: 10px
+		padding: 10px
+
+.card
+	&__info
+		min-height: 25px
+		+dend
+		background: url(../images/profile.png) no-repeat left /20px
+		padding: 0 10px 5px
+	&__number
+		+font(10px,25px)
+		padding: 5px
+	&__text
+		+font(10px,25px)
+		+borderbot(1px,#D6D5D5)
+		padding: 5px
+		white-space: pre-line
+		word-break: break-all
+		border-radius: 3px
+		&:nth-child(2n+1)
+			background: $hovergray

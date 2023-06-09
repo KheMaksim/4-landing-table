@@ -1,0 +1,137 @@
+.main
+	&__container
+		margin-left: 88px
+		padding: 14px 21px
+		+tablet-landscape
+			margin-left: 68px
+			padding: 11px 16px
+		+mobile-landscape
+			margin-left: 0
+			padding: 9px 12px
+	&__title
+		+font(32px,38px)
+		font-weight: 300
+		letter-spacing: -0.03em
+		margin-bottom: 16px
+		+tablet-landscape
+			+font(25px,29px)
+			font-weight: 300
+			margin-bottom: 12px
+		+mobile-landscape
+			+font(18px,20px)
+			font-weight: 300
+			margin: 10px 0
+			padding-left: 48px
+	&__title-second
+		+font(16px,24px)
+		font-weight: 500
+		text-transform: uppercase
+		color: #fff
+		background: #195ABB
+		border-radius: 8px 8px 0 0
+		padding: 16px 24px
+		+tablet-landscape
+			+font(12px,18px)
+			font-weight: 500
+			padding: 12px 18px
+		+mobile-landscape
+			+font(10px,12px)
+			font-weight: 500
+			padding-left: 10px 12px
+	&__table
+		background: $bgtable
+		border-radius: 8px
+		padding: 24px
+		+tablet-landscape
+			padding: 18px
+
+.table
+	&__block
+		width: 100%
+		table-layout: fixed
+		border-collapse: collapse
+		+mobile-landscape
+			display: none
+
+.heading
+	&__row
+		+borderbot(2px,$bordcol)
+	&__text
+		+font(16px,40px)
+		+tableset
+		font-weight: 500
+		text-align: left
+		padding: 0 12px
+		+tablet-landscape
+			+font(12px,31px)
+			font-weight: 500
+			padding: 0 5px
+		&:first-child
+			width: 5.477%
+		&:nth-child(2)
+			width: 13.3%
+		&:nth-child(3)
+			width: 13.3%
+		&:nth-child(4)
+			width: 16.43%
+		&:nth-child(5)
+			width: 29.73%
+		&:last-child
+			width: 7.82%
+		&:hover
+			+hovertxt
+			word-break: break-all
+			&:first-child
+				white-space: normal
+	&__sort
+		+dbetween
+
+.sort
+	&__subtitle
+		width: 100%
+		text-transform: uppercase
+		color: #49388C
+		margin-right: 5px
+		overflow: hidden
+		text-overflow: ellipsis
+		+tablet-landscape
+			+font(12px,31px)
+			font-weight: 500
+	&__icons
+		+column
+		height: 10px
+		margin: auto 0
+
+.body
+	&__row
+		+borderbot(1px,#D6D5D5)
+	&__text
+		+font(16px,40px)
+		+tableset
+		color: $txtcolor
+		padding: 0 12px
+		&:last-child
+			background: url(../images/profile.png) no-repeat left /20px
+			background-position-x: 12px
+		+tablet-landscape
+			+font(12px,31px)
+			padding: 0 10px
+		&:hover
+			+hovertxt
+			word-break: break-all
+			position: absolute
+			&:last-child
+				background: url(../images/profile.png) no-repeat left
+				background-position-x: 12px
+				position: relative
+
+.hidden
+	+width(80px)
+	+border(1px,$bordcol)
+	display: none
+	background: $hovergray
+	border-radius: 5px
+	padding: 0 15px
+	margin-bottom: 15px
+	+mobile-landscape
+		+dbetween
